@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowDown, Sparkles } from 'lucide-react'
-import { fadeInUpVariants, titleRevealVariants } from '@/lib/animations'
+import { titleRevealVariants } from '@/lib/animations'
 
 export function Hero() {
   return (
