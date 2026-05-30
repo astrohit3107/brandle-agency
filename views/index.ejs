@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRANDLE - Creator Management</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">B</div>
+                <span>BRANDLE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#creators" class="nav-link">Creators</a></li>
+                <li><a href="#stats" class="nav-link">Impact</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-label animate-fade-in">For Ambitious Creators</div>
+                <h1 class="hero-title animate-slide-up">
+                    Turn Your <span class="gradient-text">Passion</span> Into <span class="gradient-text">Fortune</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-in-delay">Build. Scale. Monetize.</p>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card animate-float">
+                    <div class="card-label">500+ Creators</div>
+                    <div class="card-value">₹2B+</div>
+                    <div class="card-desc">Revenue Generated</div>
+                </div>
+                <canvas id="canvas-bg"></canvas>
+            </div>
+        </div>
+
+        <div class="scroll-indicator animate-bounce">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <div class="section-label">What We Do</div>
+            <h2>Creator Management<span class="gradient-text">Services</span></h2>
+        </div>
+
+        <div id="services-container" class="services-grid">
+            <!-- Loaded dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <h2>Our <span class="gradient-text">Impact</span></h2>
+        <div id="stats-container" class="stats-grid">
+            <!-- Loaded dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- Creators Section -->
+    <section id="creators" class="creators">
+        <div class="section-header">
+            <div class="section-label">Success Stories</div>
+            <h2>From Our<span class="gradient-text">Creators</span></h2>
+        </div>
+
+        <div id="creators-container" class="creators-grid">
+            <!-- Loaded dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-final">
+        <div class="cta-content">
+            <h2>Ready to <span class="gradient-text">Scale?</span></h2>
+            <p>Join creators who've transformed their passion into sustainable businesses</p>
+            <button class="cta-btn-large">Schedule Consultation</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-footer">
+                    <div class="logo-icon-footer">B</div>
+                    <span>BRANDLE</span>
+                </div>
+                <p>Empowering creators worldwide</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2024 BRANDLE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/canvas-animation.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

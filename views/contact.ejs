@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BRANDLE</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">B</div>
+                <span>BRANDLE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/" class="nav-link">Services</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section style="min-height: 100vh; padding: 120px 1.5rem 60px; max-width: 1280px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <div class="section-label">Get In Touch</div>
+            <h1 style="font-size: 3.5rem; font-weight: 900; margin-bottom: 1rem;">
+                Let's <span class="gradient-text">Connect</span>
+            </h1>
+            <p style="color: #9ca3af; font-size: 1.125rem; max-width: 500px; margin: 0 auto;">
+                Ready to scale your creator business? Get in touch with our team.
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center;">
+            <div style="background: linear-gradient(135deg, rgba(255, 199, 0, 0.1) 0%, transparent 100%); border: 1px solid rgba(255, 199, 0, 0.2); border-radius: 1rem; padding: 2rem;">
+                <form id="contact-form">
+                    <div style="margin-bottom: 1.5rem;">
+                        <input type="text" placeholder="Your Name" required style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 199, 0, 0.2); border-radius: 0.5rem; color: white; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <input type="email" placeholder="Your Email" required style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 199, 0, 0.2); border-radius: 0.5rem; color: white; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <textarea placeholder="Your Message" rows="5" required style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 199, 0, 0.2); border-radius: 0.5rem; color: white; font-size: 1rem; font-family: inherit;"></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn-large" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-footer">
+                    <div class="logo-icon-footer">B</div>
+                    <span>BRANDLE</span>
+                </div>
+                <p>Empowering creators worldwide</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2024 BRANDLE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We\'ll get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

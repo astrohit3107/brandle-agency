@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "buildCommand": "npm install",
+  "devCommand": "npm run dev",
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": "public/**"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/css/(.*)",
+      "dest": "public/css/$1",
+      "headers": {
+        "cache-control": "public, max-age=3600, s-maxage=3600"
+      }
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "public/js/$1",
+      "headers": {
+        "cache-control": "public, max-age=3600, s-maxage=3600"
+      }
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "public/images/$1",
+      "headers": {
+        "cache-control": "public, max-age=86400, s-maxage=86400"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
