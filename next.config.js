@@ -9,14 +9,6 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
-    optimization: {
-      experimental: {
-        incrementalCacheHandlerPath: undefined,
-      },
-    },
-  },
-  typescript: {
-    tsconfigPath: './tsconfig.json',
   },
 };
 
